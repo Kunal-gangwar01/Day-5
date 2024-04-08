@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Async File</title>
+    <style>
+        header{
+            height: 100px;
+            background-color: rgb(87, 157, 218);
+        }
+        footer{
+            height: 100px;
+            background-color: rgb(234, 241, 41);
+        }
+        h1{
+            text-align: center;
+           background-color: brown;
+        }
+        body {
+            background-color: rgb(157, 200, 238);
+        }
+
+        .news-card {
+            background-color: rgb(180, 168, 153);
+            max-width: 400px;
+            padding: 24px;
+            margin: 40px;
+            max-height: 400px;
+            overflow: scroll;
+
+        }
+
+        img {
+            max-width: 300px;
+            max-height: 300px;
+            margin: auto;
+            align-items: center;
+        }
+
+        #root {
+            display: grid;
+            grid-template-columns: 450px 450px 450px;
+        }
+       
+    </style>
 </head>
 <body>
-    <h2>Async JS</h2><br></br>
-    <button >Print</button>
+   <header>
+    <h1>Todays News</h1> </header>
+   <main>
+    <div id="root"></div>
+   </main>
+   <footer></footer>
     <script src="./script.js"></script>
 </body>
 </html>
